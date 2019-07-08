@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/page/contacts_page.dart';
-import 'package:flutter_demo/page/home_page.dart';
-import 'package:flutter_demo/page/setting_page.dart';
+import 'package:flutter_demo/test/page/contacts_page.dart';
+import 'package:flutter_demo/test/page/home_page.dart';
+import 'package:flutter_demo/test/page/setting_page.dart';
 
 class TestPage extends StatefulWidget {
   @override

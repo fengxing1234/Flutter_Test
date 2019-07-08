@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/page/sports_page.dart';
-import 'package:flutter_demo/page/technology_page.dart';
+import 'package:flutter_demo/test/page/sports_page.dart';
+import 'package:flutter_demo/test/page/technology_page.dart';
 
 import 'hot_page.dart';
 

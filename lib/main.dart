@@ -2,8 +2,9 @@ import 'dart:io';
 import 'package:flutter/services.dart';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/page/splash_page.dart';
+
 import 'package:flutter_demo/res/colors.dart';
+import 'package:flutter_demo/test/page/splash_page.dart';
 
 void main() {
   runApp(MyApp());
