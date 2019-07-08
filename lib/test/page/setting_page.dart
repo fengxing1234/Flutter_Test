@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/utils/native_toast.dart';
 
 class SettingPage extends StatefulWidget {
   @override
@@ -33,6 +34,7 @@ class _SettingPageState extends State<SettingPage> {
           ),
           onDismissed: (direction) {
             items.removeAt(index);
+            NativeToast().showToast('删除了第$index条数据');
             print(index);
           },
         );
