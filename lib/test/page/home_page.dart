@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/test/page/pet_page.dart';
 import 'package:flutter_demo/test/page/sports_page.dart';
 import 'package:flutter_demo/test/page/technology_page.dart';
 
@@ -19,7 +20,7 @@ class _PageHomeState extends State<HomePage>
 
   void initState() {
     super.initState();
-    _tabController = TabController(length: 3, vsync: this);
+    _tabController = TabController(length: 4, vsync: this);
   }
 
   @override
@@ -46,6 +47,9 @@ class _PageHomeState extends State<HomePage>
             Tab(
               text: '科技',
             ),
+            Tab(
+              text: '布局',
+            ),
           ],
         ),
       ),
@@ -59,6 +63,7 @@ class _PageHomeState extends State<HomePage>
         HotPage(),
         SportPage(),
         TechnologyPage(),
+        PetCard(null),
       ],
       controller: _tabController,
     );

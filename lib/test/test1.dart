@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/test/page/contacts_page.dart';
 import 'package:flutter_demo/test/page/home_page.dart';
+import 'package:flutter_demo/test/page/pet_page.dart';
 import 'package:flutter_demo/test/page/setting_page.dart';
 
 class TestPage extends StatefulWidget {
@@ -34,6 +35,10 @@ class _TestPageState extends State<TestPage> {
             ListTile(
               title: Text('邮件'),
               leading: Icon(Icons.email),
+              onTap: () {
+                Navigator.push(context,
+                    new MaterialPageRoute(builder: (context) => PetCard(null)));
+              },
             ),
             ListTile(
               leading: Icon(Icons.settings),
